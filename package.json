@@ -18,6 +18,7 @@
   "homepage": "https://github.com/voromahery/react-button#readme",
   "dependencies": {
     "react": "^16.13.1",
+    "react-color-attribute": "^1.1.4",
     "react-dom": "^16.13.1"
   }
 }
