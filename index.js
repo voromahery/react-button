@@ -13,7 +13,7 @@ function App() {
                 <Button variant="outline-text">Default</Button>
             </div>
             <div>
-                <Button className="disableShadow">Default</Button>
+                <Button variant="disableShadow">Default</Button>
             </div>
             <div className="disable">
                 <Button variant="disable-button">Disabled</Button>
@@ -35,7 +35,7 @@ function App() {
                 <Button color="danger">Secondary</Button>
             </div>
             <div>
-                <Button endIcon="end-icon" size="sm" color="secondary">Danger</Button>
+                <Button endIcon="end-icon" size="lg" color="secondary">Danger</Button>
             </div>
         </div>
     )

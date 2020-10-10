@@ -3,7 +3,6 @@ import './style.css';
 
 function Button(props) {
     let style = "";
-    
     if (props.className && props.color) {
         style = `${props.className} ${props.color}`;
     }
@@ -61,6 +60,34 @@ function Button(props) {
 
     if (props.endIcon && props.variant) {
         style = `${props.endIcon} ${props.color} ${props.variant}`;
+    }
+
+    if (props.endIcon && props.size) {
+        style = `${props.endIcon} ${props.size}`;
+    }
+
+    if (props.startIcon && props.size) {
+        style = `${props.startIcon} ${props.size}`;
+    }
+
+    if (props.size && props.color && props.endIcon) {
+        style = `${props.color} ${props.size} ${props.endIcon}`;
+    }
+
+    if (props.size && props.color && props.startIcon) {
+        style = `${props.color} ${props.size} ${props.startIcon}`;
+    }
+
+    if (props.variant && props.color && props.endIcon) {
+        style = `${props.color} ${props.variant} ${props.endIcon}`;
+    }
+
+    if (props.variant && props.size && props.endIcon) {
+        style = `${props.variant} ${props.size} ${props.endIcon}`;
+    }
+
+    if (props.variant && props.size && props.startIcon) {
+        style = `${props.variant} ${props.size} ${props.startIcon}`;
     }
 
     if (props.variant && props.size && props.color && props.endIcon) {
