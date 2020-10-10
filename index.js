@@ -13,15 +13,15 @@ function App() {
                 <Button variant="outline-text">Default</Button>
             </div>
             <div>
-                <Button variant="disableShadow">Default</Button>
+                <Button className="disableShadow">Default</Button>
             </div>
             <div className="disable">
                 <Button variant="disable-button">Disabled</Button>
                 <Button variant="disable-text">Disabled</Button>
             </div>
             <div className="icon">
-                <Button variant="start-icon"><img src={icon} alt="shopping-cart" /> Default</Button>
-                <Button variant="end-icon">Default <img src={icon} alt="shopping-cart" /></Button>
+                <Button startIcon="start-icon">Default</Button>
+                <Button endIcon="end-icon">Default</Button>
             </div>
             <div className="size">
                 <Button size="sm">Default</Button>
@@ -33,7 +33,9 @@ function App() {
                 <Button color="primary">Primary</Button>
                 <Button color="secondary">Secondary</Button>
                 <Button color="danger">Secondary</Button>
-                <Button size="lg" color="danger">Danger</Button>
+            </div>
+            <div>
+                <Button endIcon="end-icon" size="sm" color="secondary">Danger</Button>
             </div>
         </div>
     )

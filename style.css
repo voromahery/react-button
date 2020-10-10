@@ -9,6 +9,11 @@ button {
     border: none;
 }
 
+button:hover,
+button:focus {
+    background-color: #AEAEAE;
+}
+
 img {
     max-width: 12px;
 }
@@ -58,7 +63,18 @@ img {
     color: #FFFFFF
 }
 
-.disable-button {
+.disableShadow:hover,
+.disableShadow:focus {
+    background: #3D5AFE;
+}
+
+.disable-text:hover {
+    background-color: transparent;
+}
+
+.disable-button,
+.disable-button:hover,
+.disable-button:focus {
     background-color: #E0E0E0;
 }
 
@@ -68,10 +84,20 @@ img {
 }
 
 .start-icon,
+.start-icon:hover,
+.start-icon:focus,
 .end-icon,
+.end-icon:hover,
+.end-icon:focus,
 .sm,
+.sm:hover,
+.sm:focus,
 .md,
-.lg {
+.md:hover,
+.md:focus,
+.lg,
+.lg:hover,
+.lg:focus {
     background-color: #2962FF;
 }
 
@@ -80,9 +106,24 @@ img {
     box-shadow: 0px 2px 3px rgba(0, 49, 202, 0.2);
 }
 
-.start-icon::before {
+.start-icon::before,
+.end-icon::after {
+    content: "";
     background-image: url('./icon/shopping-cart.svg');
     background-repeat: no-repeat;
+    width: 13px;
+    height: 14px;
+    background-size: contain;
+}
+
+.start-icon::before {
+    padding-right: 1.5rem;
+    background-position: left center;
+}
+
+.end-icon::after {
+    padding-left: 1.5rem;
+    background-position: right center;
 }
 
 .start-icon,
