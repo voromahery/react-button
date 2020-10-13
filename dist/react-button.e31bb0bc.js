@@ -28540,11 +28540,7 @@ function App() {
     color: "secondary"
   }, "Secondary")), /*#__PURE__*/_react.default.createElement("div", null, "<Button color=\"danger\" />", /*#__PURE__*/_react.default.createElement(_Buttons.default, {
     color: "danger"
-  }, "Secondary"))), /*#__PURE__*/_react.default.createElement("div", null, /*#__PURE__*/_react.default.createElement(_Buttons.default, {
-    endIcon: "end-icon",
-    size: "lg",
-    color: "secondary"
-  }, "Default")));
+  }, "Secondary"))));
 }
 
 _reactDom.default.render( /*#__PURE__*/_react.default.createElement(App, null), document.querySelector('#root'));
@@ -28579,7 +28575,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54619" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55599" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
