@@ -76,9 +76,6 @@ function App() {
                 <Button color="danger">Secondary</Button>
                 </div>
             </div>
-            <div>
-                <Button endIcon="end-icon" size="lg" color="secondary">Default</Button>
-            </div>
         </div>
     )
 }
